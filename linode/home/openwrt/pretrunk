@@ -1,7 +1,12 @@
-git clone git://git.openwrt.org/openwrt.git /home/openwrt/trunk
+#!/bin/bash
 
-git clone https://github.com/aa65535/openwrt-chinadns.git /home/openwrt/trunk/package/chinadns-c
-git clone https://github.com/aa65535/openwrt-shadowsocks.git /home/openwrt/trunk/package/shadowsocks-libev
-git clone https://github.com/aa65535/openwrt-shadowvpn.git /home/openwrt/trunk/package/shadowvpn
+DIR_HOME=/home/openwrt
+DIR_ROOT=$DIR_HOME/trunk
 
-ln -s /home/openwrt/dl /home/openwrt/trunk/dl
+# getting source
+git clone git://git.openwrt.org/openwrt.git $DIR_ROOT
+git clone https://github.com/aa65535/openwrt-chinadns.git $DIR_ROOT/package/chinadns-c
+git clone https://github.com/aa65535/openwrt-shadowsocks.git $DIR_ROOT/package/shadowsocks-libev
+git clone https://github.com/aa65535/openwrt-shadowvpn.git $DIR_ROOT/package/shadowvpn
+
+ln -s $DIR_HOME/dl $DIR_ROOT/dl
