@@ -10,3 +10,8 @@ git clone https://github.com/aa65535/openwrt-shadowsocks.git $DIR_ROOT/package/s
 git clone https://github.com/aa65535/openwrt-shadowvpn.git $DIR_ROOT/package/shadowvpn
 
 ln -s $DIR_HOME/dl $DIR_ROOT/dl
+
+# scripts - mn
+touch $DIR_ROOT/mn && chmod +x $DIR_ROOT/mn
+echo "#!/bin/bash" >> $DIR_ROOT/mn
+echo "" >> $DIR_ROOT/mn
