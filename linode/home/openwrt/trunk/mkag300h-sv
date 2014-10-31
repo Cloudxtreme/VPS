@@ -3,18 +3,19 @@
 DIR_ROOT=/home/openwrt/trunk
 DIR_PKG=$DIR_ROOT/package
 DIR_BIN=$DIR_ROOT/bin/ar71xx
+CONFIG=ag300h-sv.config
 
 cd $DIR_PKG/chinadns-c && git pull
 cd $DIR_PKG/shadowsocks-libev && git pull
 cd $DIR_PKG/shadowvpn && git pull
 cd $DIR_ROOT && git pull
 
-cp -f $DIR_ROOT/ag300h-sv.config $DIR_ROOT/.config
+cp -f $DIR_ROOT/$CONFIG $DIR_ROOT/.config
 $DIR_ROOT/scripts/feeds update -a
 $DIR_ROOT/scripts/feeds install -a
 make defconfig
 make prereq
-cp -f $DIR_ROOT/.config $DIR_ROOT/ag300h-sv.config
+cp -f $DIR_ROOT/.config $DIR_ROOT/$CONFIG
 make
 
 mv -f $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade.bin $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.bin
