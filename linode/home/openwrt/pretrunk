@@ -16,11 +16,12 @@ touch $DIR_ROOT/mn && chmod +x $DIR_ROOT/mn
 echo "#!/bin/bash" >> $DIR_ROOT/mn
 echo "DIR_HOME=/home/openwrt" >> $DIR_ROOT/mn
 echo "DIR_ROOT=$DIR_HOME/trunk" >> $DIR_ROOT/mn
-echo "cd $DIR_ROOT/package/chinadns-c && git pull" >> $DIR_ROOT/mn
-echo "cd $DIR_ROOT/package/shadowsocks-libev && git pull" >> $DIR_ROOT/mn
-echo "cd $DIR_ROOT/package/shadowvpn && git pull" >> $DIR_ROOT/mn
+echo "DIR_PKG=$DIR_ROOT/package" >> $DIR_ROOT/mn
+echo "cd $DIR_PKG/chinadns-c && git pull" >> $DIR_ROOT/mn
+echo "cd $DIR_PKG/shadowsocks-libev && git pull" >> $DIR_ROOT/mn
+echo "cd $DIR_PKG/shadowvpn && git pull" >> $DIR_ROOT/mn
 echo "cd $DIR_ROOT && git pull" >> $DIR_ROOT/mn
-echo "./scripts/feeds update -a && ./scripts/feeds install -a" >> $DIR_ROOT/mn
+echo "$DIR_ROOT/scripts/feeds update -a && $DIR_ROOT/scripts/feeds install -a" >> $DIR_ROOT/mn
 echo "make defconfig" >> $DIR_ROOT/mn
 echo "make prereq" >> $DIR_ROOT/mn
 echo "make menuconfig" >> $DIR_ROOT/mn

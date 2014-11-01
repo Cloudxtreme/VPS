@@ -3,26 +3,26 @@
 DIR_ROOT=/home/openwrt/trunk
 DIR_PKG=$DIR_ROOT/package
 DIR_BIN=$DIR_ROOT/bin/ar71xx
-CONFIG=ag300h-ss.config
+DIR_GIT=/home/openwet/VPS
+CONFIG=$DIR_GIT/linode/home/openwrt/trunk/ag300h-ss.config
 
 cd $DIR_PKG/chinadns-c && git pull
 cd $DIR_PKG/shadowsocks-libev && git pull
 cd $DIR_PKG/shadowvpn && git pull
 
 cd $DIR_ROOT && git pull
-cp -f $DIR_ROOT/$CONFIG $DIR_ROOT/.config
+cp -f $CONFIG $DIR_ROOT/.config
 $DIR_ROOT/scripts/feeds update -a
 $DIR_ROOT/scripts/feeds install -a
 make defconfig
 make prereq
-cp -f $DIR_ROOT/.config $DIR_ROOT/$CONFIG
+cp -f $DIR_ROOT/.config $CONFIG
 make
 
 mv -f $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade.bin $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowsocks.bin
 scp $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowsocks.bin xvm:/var/www/router/firmware/trunk/
 
-touch $DIR_ROOT/timetag && echo `date -I` > $DIR_ROOT/timetag
-scp $DIR_ROOT/timetag xvm:/var/www/router/firmware/
-
 touch $DIR_ROOT/ver && echo `git log | grep -m 1 git-svn-id | awk '{ gsub(/.*@/, "", $0); print $1 }'` > $DIR_ROOT/ver
 scp $DIR_ROOT/ver xvm:/var/www/router/firmware/
+
+cd $DIR_GIT && git push

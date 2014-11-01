@@ -2,14 +2,14 @@
 
 DIR_HOME=/home/openwrt
 DIR_ROOT=$DIR_HOME/trunk
+DIR_PKG=$DIR_ROOT/package
 
-cd $DIR_ROOT/package/chinadns-c && git pull
-cd $DIR_ROOT/package/shadowsocks-libev && git pull
-cd $DIR_ROOT/package/shadowvpn && git pull
+cd $DIR_PKG/chinadns-c && git pull
+cd $DIR_PKG/shadowsocks-libev && git pull
+cd $DIR_PKG/shadowvpn && git pull
 
 cd $DIR_ROOT && git pull
-./scripts/feeds update -a
-./scripts/feeds install -a
+$DIR_ROOT/scripts/feeds update -a && $DIR_ROOT/scripts/feeds install -a
 make defconfig
 make prereq
 make menuconfig
