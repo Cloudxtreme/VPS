@@ -1,0 +1,23 @@
+#!/bin/sh
+
+URL=http://abs.twimg.com/favicons/favicon.ico
+FILE=/tmp/tt.ico
+LOG=/tmp/tt.log
+
+wget $URL -O $FILE -a $LOG;
+isfound=$(cat $LOG | grep "failed");
+
+if [ -n "$isfound" ]; then
+	rm -rf $FILE $LOG;
+	echo "[INFO]: ShadowSocks is dead, restartting ShadowSocks...";
+	/etc/init.d/shadowsocks restart && echo "[INFO]: ShadowSocks restarted.";
+
+elif [ $(ps | grep -c "ss-redir") = 1 ]; then
+	echo "[INFO]: ShadowSocks's process does not exist, restartting ShadowSocks...";
+	/etc/init.d/shadowsocks restart && echo "[INFO]: ShadowSocks restarted.";
+
+else
+	rm -rf $FILE $LOG;
+	echo "[INFO]: ShadowSocks is alive.";
+
+fi

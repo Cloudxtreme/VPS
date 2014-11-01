@@ -1,0 +1,49 @@
+#!/bin/sh
+
+URL=http://abs.twimg.com/favicons/favicon.ico
+FILE=/tmp/tt.ico
+LOG=/tmp/tt.log
+
+wget $URL -O $FILE -a $LOG;
+isfound=$(cat $LOG | grep "failed");
+
+if [ -n "$isfound" ]; then
+	rm -rf $FILE $LOG;
+	echo "[INFO]: ShadowSocks is dead, restartting ShadowSocks...";
+	/etc/init.d/shadowsocks restart && echo "[INFO]: ShadowSocks restarted.";
+
+	echo "[INFO]: Verifying if ShadowSocks is working...";
+	wget $URL -O $FILE -a $LOG;
+	isfound=$(cat $LOG | grep "failed");
+
+	if [ -n "$isfound" ]; then
+		rm -rf $FILE $LOG;
+		echo "[INFO]: ShadowSocks still not working, rebooting Router...";
+		reboot;
+
+	else
+		rm -rf $FILE $LOG;
+		echo "[INFO]: Restartting ShadowSocks worked, enjoy...";
+
+	fi
+
+elif [ $(ps | grep -c "ss-redir") = 1 ]; then
+	echo "[INFO]: ShadowSocks's process does not exist, restartting ShadowSocks...";
+	/etc/init.d/shadowsocks restart && echo "[INFO]: ShadowSocks restarted.";
+
+	echo "[INFO]: Verifying if ShadowSocks's process was recovered...";
+
+	if [ $(ps | grep -c "ss-redir") = 1 ]; then
+		echo "[INFO]: ShadowSocks still not working, rebooting Router...";
+		reboot;
+
+	else
+		echo "[INFO]: ShadowSocks's process was recovered, enjoy...";
+
+	fi
+
+else
+	rm -rf $FILE $LOG;
+	echo "[INFO]: ShadowSocks is alive.";
+
+fi
