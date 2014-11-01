@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SRC_OP=/home/openwrt
+SRC_1407=$SRC_OP/14.07
+SRC_TRUNK=$SRC_OP/trunk
+
+GIT_ROOT=/home/bkup
+GIT_OP=$GIT_ROOT/linode/home/openwrt
+GIT_1407=$GIT_OP/14.07
+GIT_TRUNK=$GIT_OP/trunk
+
+rsync $SRC_OP/pre* $GIT_OP/
+rsync $SRC_1407/*.config $GIT_1407/
+rsync $SRC_TRUNK/*.config $GIT_TRUNK/
+rsync $SRC_1407/mk* $GIT_1407/
+rsync $SRC_TRUNK/mk* $GIT_TRUNK/
+
+rsync /etc/crontab $GIT_ROOT/linode/etc/
+rsync /etc/rc.local $GIT_ROOT/linode/etc/
+
+rsync -r /etc/shadowsocks $GIT_ROOT/linode/etc/
+
+cd $GIT_ROOT && git add * && git commit -m "linode daily bkup" && git push
