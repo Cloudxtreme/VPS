@@ -1,16 +1,26 @@
-cd /home/openwrt/14.07/package/chinadns-c && git pull
-cd /home/openwrt/14.07/package/shadowsocks-libev && git pull
-cd /home/openwrt/14.07/package/shadowvpn && git pull
-cd /home/openwrt/14.07
-git pull
-cp -f ag300h-sv.config .config
-./scripts/feeds update -a
-./scripts/feeds install -a
+#!/bin/bash
+
+DIR_ROOT=/home/openwrt/14.07
+DIR_PKG=$DIR_ROOT/package
+DIR_BIN=$DIR_ROOT/bin/ar71xx
+DIR_GIT=/home/bkup
+CONFIG=$DIR_GIT/linode/openwrt/14.07/ag300h-sv.config
+
+cd $DIR_PKG/chinadns-c && git pull
+cd $DIR_PKG/shadowsocks-libev && git pull
+cd $DIR_PKG/shadowvpn && git pull
+cd $DIR_ROOT && git pull
+
+cp -f $CONFIG $DIR_ROOT/.config
+$DIR_ROOT/scripts/feeds update -a
+$DIR_ROOT/scripts/feeds install -a
 make defconfig
 make prereq
-cp -f .config ag300h-sv.config
+cp -f $DIR_ROOT/.config $CONFIG
 make
-mv -f ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade.bin ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.bin
-scp ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.bin xvm:/var/www/router/firmware/14.07/
-touch ./timetag && echo `date -I` > ./timetag
-scp ./timetag xvm:/var/www/router/firmware/
+
+mv -f $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade.bin $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.bin
+scp $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.bin xvm:/var/www/router/firmware/trunk/
+
+touch $DIR_ROOT/ver && echo `git log | grep -m 1 git-svn-id | awk '{ gsub(/.*@/, "", $0); print $1 }'` > $DIR_ROOT/ver
+scp $DIR_ROOT/ver xvm:/var/www/router/firmware/
