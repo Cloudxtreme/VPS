@@ -15,6 +15,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #
 
 40 15 * * *	root	sh /root/fetch_shadowsocks_ignore_list
-00 16 * * *	root	rsync /etc/crontab /home/bkup/xvm/etc/ && rsync -r /var/www /home/bkup/xvm/var/ && cd /home/bkup && git add * && git commit -m "xvm daily bkup" && git push
+00 16 * * *	root	sh /home/bkup/xvm/bkup
 30 16 * * 1-6	root	reboot
 30 16 * * 0	root	apt-get update && apt-get upgrade -y && reboot
