@@ -5,4 +5,4 @@ GIT_ROOT=/home/bkup
 rsync /etc/crontab $GIT_ROOT/xvm/etc/
 rsync -a --delete /var/www/ $GIT_ROOT/xvm/var/www/
 
-cd $GIT_ROOT && git add * && git commit -m "xvm daily bkup" && git push
+cd $GIT_ROOT && git pull && git add * && git commit -m "xvm daily bkup" && git push
