@@ -1,0 +1,16 @@
+cd /home/openwrt/14.07/package/chinadns-c && git pull
+cd /home/openwrt/14.07/package/shadowsocks-libev && git pull
+cd /home/openwrt/14.07/package/shadowvpn && git pull
+cd /home/openwrt/14.07
+git pull
+cp -f ag300h-sv.config .config
+./scripts/feeds update -a
+./scripts/feeds install -a
+make defconfig
+make prereq
+cp -f .config ag300h-sv.config
+make
+mv -f ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade.bin ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.bin
+scp ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.bin xvm:/var/www/router/firmware/14.07/
+touch ./timetag && echo `date -I` > ./timetag
+scp ./timetag xvm:/var/www/router/firmware/

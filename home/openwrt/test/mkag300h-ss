@@ -1,0 +1,22 @@
+cd /home/openwrt/test/package/chinadns-c && git pull
+cd /home/openwrt/test/package/shadowsocks-libev && git pull
+cd /home/openwrt/test/package/shadowvpn && git pull
+
+cd /home/openwrt/test
+git pull
+cp -f ./ag300h-ss.config ./.config
+./scripts/feeds update -a
+./scripts/feeds install -a
+make defconfig
+make prereq
+cp -f ./.config ./ag300h-ss.config
+make
+
+mv -f ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade.bin ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowsocks.bin
+scp ./bin/ar71xx/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowsocks.bin xvm:/var/www/router/firmware/trunk/
+
+touch ./timetag && echo `date -I` > ./timetag
+scp ./timetag xvm:/var/www/router/firmware/
+
+touch ./ver && echo `git log | grep -m 1 git-svn-id | awk '{ gsub(/.*@/, "", $0); print $1 }'` > ./ver
+scp ./ver xvm:/var/www/router/firmware/
