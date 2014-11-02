@@ -1,0 +1,28 @@
+#!/bin/bash
+
+PATH="/var/www/router/shadowsocks";
+
+if [ -e $PATH/ignore.list ]; then
+	/bin/mv -f $PATH/ignore.list $PATH/ignore.list.old
+	/usr/bin/curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list;
+
+	if [ -s "$PATH/ignore.list" ]; then
+		/bin/cat $PATH/ip-vps >> $PATH/ignore.list;
+	
+	else
+		/usr/bin/wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list && /bin/cat $PATH/ip-vps >> $PATH/ignore.list;
+	
+	fi
+
+else
+	/usr/bin/curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list;
+
+	if [ -s "$PATH/ignore.list" ]; then
+		/bin/cat $PATH/ip-vps >> $PATH/ignore.list;
+	
+	else
+		/usr/bin/wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list && /bin/cat $PATH/ip-vps >> $PATH/ignore.list;
+	
+	fi
+
+fi

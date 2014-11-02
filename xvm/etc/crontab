@@ -14,7 +14,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 
-40 15 * * *	root	sh /root/fetch_shadowsocks_ignore_list
+40 15 * * *	root	sh /var/www/router/shadowsocks/scripts/fetch_shadowsocks_ignore_list
 00 16 * * *	root	sh /home/bkup/xvm/bkup
 30 16 * * 1-6	root	reboot
 30 16 * * 0	root	apt-get update && apt-get upgrade -y && reboot
