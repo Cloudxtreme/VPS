@@ -4,7 +4,7 @@ DIR_ROOT=/home/openwrt/14.07
 DIR_PKG=$DIR_ROOT/package
 DIR_BIN=$DIR_ROOT/bin/ar71xx
 DIR_GIT=/home/bkup
-CONFIG=$DIR_GIT/linode/home/openwrt/14.07/n750-ss.config
+CONFIG=$DIR_ROOT/n750-ss.config
 
 cd $DIR_PKG/chinadns-c && git pull
 cd $DIR_PKG/shadowsocks-libev && git pull
