@@ -11,7 +11,7 @@
 #
 # By default this script does nothing.
 
-insmod /root/tcp_hybla.ko
+insmod /root/tcp_hybla-3.14.5.ko
 sysctl --system
 supervisorctl restart shadowsocks
 
