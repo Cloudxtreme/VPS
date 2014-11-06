@@ -20,6 +20,6 @@ rsync /etc/rc.local $GIT_ROOT/linode/etc/
 
 rsync -r /etc/shadowsocks $GIT_ROOT/linode/etc/
 
-rsync ~/*.ko $GIT_ROOT/linode/root/
+rsync /root/*.ko $GIT_ROOT/linode/root/
 
 cd $GIT_ROOT && git pull && git add * && git commit -m "linode daily bkup" && git push
