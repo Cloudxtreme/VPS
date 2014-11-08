@@ -17,9 +17,8 @@ rsync $SRC_TRUNK/mk* $GIT_TRUNK/
 
 rsync /etc/crontab $GIT_ROOT/linode/etc/
 rsync /etc/rc.local $GIT_ROOT/linode/etc/
+rsync /etc/*.ko $GIT_ROOT/linode/root/
 
 rsync -r /etc/shadowsocks $GIT_ROOT/linode/etc/
-
-cp -f /etc/*.ko $GIT_ROOT/linode/root/
 
 cd $GIT_ROOT && git pull && git add * && git commit -m "linode daily bkup" && git push
