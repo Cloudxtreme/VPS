@@ -57,7 +57,7 @@
 		<p>
 		<h1 class="center">固件下载</h1>
 			<?php
-				echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",filemtime("firmware/ver")).'</p>';
+				echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",filemtime("firmware/timetag")).'</p>';
 			?>
 			<p class="center">
 				<a href="javascript:history.go(-1)">返回</a><a href="#etc">其他</a>

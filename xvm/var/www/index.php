@@ -47,7 +47,7 @@
 						<?php
 							echo
 							'<a href="'.$path_op.'/firmware.php">查看</a>
-							<sup>'.date("Y-m-d H:i",filemtime("$path_op/firmware.php")).'</sup>';
+							<sup>'.date("Y-m-d H:i",filemtime("$path_op/firmware/timetag")).'</sup>';
 						?>
 						<br />
 						<span class="octicon octicon-info"></span><a href="<?php echo $path_op; ?>/firmware.php#etc">设置计划任务</a>定时自动更新固件
