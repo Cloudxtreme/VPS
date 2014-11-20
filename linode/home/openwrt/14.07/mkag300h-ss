@@ -22,3 +22,6 @@ make
 mv -f $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade.bin $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowsocks.bin
 scp $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowsocks.bin xvm:/var/www/router/firmware/14.07/
 
+touch $DIR_ROOT/timetag && echo `date` > $DIR_ROOT/timetag
+scp $DIR_ROOT/timetag xvm:/var/www/router/firmware/
+rm $DIR_ROOT/timetag

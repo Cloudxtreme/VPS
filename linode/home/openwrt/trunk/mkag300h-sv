@@ -24,3 +24,7 @@ scp $DIR_BIN/openwrt-ar71xx-generic-wzr-hp-ag300h-squashfs-sysupgrade-shadowvpn.
 
 touch $DIR_ROOT/ver && echo `git log | grep -m 1 git-svn-id | awk '{ gsub(/.*@/, "", $0); print $1 }'` > $DIR_ROOT/ver
 scp $DIR_ROOT/ver xvm:/var/www/router/firmware/
+
+touch $DIR_ROOT/timetag && echo `date` > $DIR_ROOT/timetag
+scp $DIR_ROOT/timetag xvm:/var/www/router/firmware/
+rm $DIR_ROOT/timetag
