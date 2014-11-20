@@ -14,9 +14,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 
-0  4	* * *	root	sh /root/ss-up
+0  20	* * *	root	sh /root/ss-up
 
-0  2	* * *   openwrt cd /home/openwrt/trunk && sh mkag300h-ss && sh mkag300h-sv && sh mkn750-ss
-0  3	* * 4	openwrt	cd /home/openwrt/14.07 && sh mkag300h-ss && sh mkag300h-sv && sh mkn750-ss
-30 3	* * *	openwrt	sh /home/bkup/linode/bkup
-0  20	1 * *   openwrt rm -rf /home/openwrt/dl/*
+0  18	* * *   openwrt cd /home/openwrt/trunk && sh mkag300h-ss && sh mkag300h-sv && sh mkn750-ss
+0  19	* * 5	openwrt	cd /home/openwrt/14.07 && sh mkag300h-ss && sh mkag300h-sv && sh mkn750-ss
+30 19	* * *	openwrt	sh /home/bkup/linode/bkup
+0  12	1 * *   openwrt rm -rf /home/openwrt/dl/*
