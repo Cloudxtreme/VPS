@@ -7,6 +7,7 @@ DIR_GIT=/home/bkup
 CONFIG=$DIR_ROOT/ag300h-sv.config
 
 cd $DIR_PKG/chinadns-c && git pull
+cd $DIR_PKG/openwrt-dist-luci && git pull
 cd $DIR_PKG/shadowsocks-libev && git pull
 cd $DIR_PKG/shadowvpn && git pull
 cd $DIR_ROOT && git pull
