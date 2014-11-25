@@ -2,6 +2,8 @@
 
 GIT_ROOT=/home/bkup
 
+cd /var/www/fonts/font-awesome && git pull
+
 rsync /etc/crontab $GIT_ROOT/xvm/etc/
 rsync -a --delete /var/www/ $GIT_ROOT/xvm/var/www/
 
