@@ -84,7 +84,9 @@
 							<td><?php
 								echo '<a href="'.$dllink_n750_ss.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_ss).'</span><p class="hilight">'.date(" Y-m-d",$updatetime_n750_ss).'</p></a>';
 							?></td>
-							<td class="null">暂无</td>
+							<td><?php
+								echo '<a href="'.$dllink_n750_sv.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_sv).'</span><p class="hilight">'.date(" Y-m-d",$updatetime_n750_sv).'</p></a>';
+							?></td>
 						</tr>
 						<tr>
 							<td>AG300H</td>
@@ -110,7 +112,9 @@
 							<td><?php
 								echo '<a href="'.$dllink_n750_1407_ss.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_ss).'</span><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_ss).'</p></a>';
 							?></td>
-							<td class="null">暂无</td>
+							<td><?php
+								echo '<a href="'.$dllink_n750_1407_sv.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_sv).'</span><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_sv).'</p></a>';
+							?></td>
 						</tr>
 						<tr>
 							<td>AG300H</td>
