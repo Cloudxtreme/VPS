@@ -15,6 +15,7 @@
 insmod /etc/tcp_hybla-3.14.5.ko
 sysctl --system
 supervisorctl restart shadowsocks
-/usr/local/bin/shadowvpn -c /etc/shadowvpn/server.conf -s start
+
+# /usr/local/bin/shadowvpn -c /etc/shadowvpn/server.conf -s start
 
 exit 0
