@@ -11,19 +11,19 @@ fi
 
 
 if [ -s "$PATH/ignore.list" ]; then
-	/bin/cat $PATH/ip-* >> $PATH/ignore.list;
+	/usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
 	
 else
 	/bin/rm $PATH/ignore.list;
 	/usr/bin/wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list;
 
 	if [ -s "$PATH/ignore.list" ]; then
-		/bin/cat $PATH/ip-* >> $PATH/ignore.list;
+		/usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
 
 	else
 		/bin/rm $PATH/ignore.list;
 		sleep 30;
-		/bin/sh $PATH//scripts/fetch_shadowsocks_ignore_list;
+		/bin/sh $PATH/scripts/fetch_shadowsocks_ignore_list;
 
 	fi
 	
