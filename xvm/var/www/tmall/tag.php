@@ -4,9 +4,9 @@
 
 	$updatetime_page = filemtime("tag.php");
 
-	$ico_tm = '../favicons/tmall.ico';
-	$ico_tb = '../favicons/taobao.ico';
-	$ico_1688 = '../favicons/1688.ico';
+	$ico_tm = '../img/favicons/tmall.ico';
+	$ico_tb = '../img/favicons/taobao.ico';
+	$ico_1688 = '../img/favicons/1688.ico';
 
 	$url_tm = 'http://www.tmall.com/';
 	$url_tb = 'http://www.taobao.com/';
