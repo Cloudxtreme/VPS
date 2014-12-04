@@ -46,6 +46,7 @@ h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 *	{ font-weight: bold; 
 h1, h1 *	{ font-size: 32px; }
 h2, h2 *	{ font-size: 26px; }
 h3, h3 *	{ font-size: 20px; }
+h1			{ margin-top: -1.6em; }
 
 pre, code, var, samp, kbd, tt
 	{ font-family: Menlo,meslo,"Courier New",monospace; font-size: 95%; font-weight: inherit; }
@@ -83,7 +84,7 @@ a:not([name])		{
 						border-radius: .25em;
 					}
 
-:not(td) > a:not([name]):not([href$="png"]):hover	{ /*border-bottom: .1em solid rgb(65,131,196);*/
+:not(td) > a:not([name]):not([href$="png"]):not([href$="go(-1)"]):hover	{ /*border-bottom: .1em solid rgb(65,131,196);*/
 						position: relative;
 						background-color: #fff;
 						border-color: rgb(65,131,196);
@@ -93,8 +94,7 @@ a:not([name])		{
 a:not([name]):not([href^="#"]):not([href$="bin"]):not([href$="exe"]):not([href$="ignore.list"]):not([href^="java"]):not([href$="png"]):not([href*="excel"]):not([href*="scripts"])::after,
 a[href*="dropbox"]::before,
 a[href*="excel"]::before,
-a[href*="scripts"]::before,
-a[href^="java"]::before		{
+a[href*="scripts"]::before	{
 								font-family: 'FontAwesome';
 								content: '\f054';
 								margin: auto .1em auto .4em;
@@ -102,18 +102,22 @@ a[href^="java"]::before		{
 								vertical-align: 10%;
 							}
 
-a[href^="java"]::before		{ content: '\f053'; margin: auto .4em auto .1em; }
 a[href*="excel"]::before	{ content: '\f1c3'; margin: auto .2em; font-size: 14px; vertical-align: 2%; }
 a[href*="dropbox"]::before	{ content: '\f16b'; margin: auto .1em; font-size: 18px; vertical-align: 0%; }
 a[href*="scripts"]::before	{ content: '\f0f6'; margin: auto .2em; font-size: 14px; vertical-align: 2%; }
 
 a[href$="exe"]::before,
-a[href$="bin"]::before	{
-							font-family: 'octicons';
-							content: '\f0a8';
-							margin: auto .2em;
-						}
-
+a[href$="bin"]::before,
+a[href$="go(-1)"]::before	{
+								font-family: 'octicons';
+								content: '\f0a8';
+								margin: auto .2em;
+							}
+a[href$="go(-1)"]::before	{ content: '\f040'; margin: auto .4em auto .1em; color: rgba(0,0,0,.25); font-size: 200%; }
+a[href$="go(-1)"],
+a[href$="go(-1)"]:hover		{　position: relative;　margin: .1em auto auto .2em; }
+a[href$="go(-1)"]			{ color: rgba(0,0,0,0); }
+a[href$="go(-1)"]:hover		{ color: rgba(0,0,0,1); }
 a[href$="png"]:hover			{ cursor: zoom-in; }
 
 p.center > a:not(:last-child)	{ margin-right: .5em; }
@@ -365,6 +369,12 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 .fa-windows		{ color: rgb(0,182,242); }
 
 /*	自定义class	*/
+
+.f50			{ font-size: 50%; }
+.f75			{ font-size: 75%; }
+.f80			{ font-size: 80%; }
+.f85			{ font-size: 85%; }
+
 .center			{ text-align: center; }
 
 .column-2,
