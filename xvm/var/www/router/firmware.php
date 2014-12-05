@@ -54,16 +54,11 @@
 		</script>
 	</head>
 	<body>
-		<p>
+		<a href="javascript:history.go(-1)">返回</a>
 		<h1 class="center">固件下载</h1>
-			<?php
-				echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",filemtime("firmware/timetag")).'</p>';
-			?>
-			<p class="center">
-				<a href="javascript:history.go(-1)">返回</a><a href="#etc">其他</a>
-			</p>
-		</p>
-		<hr />
+		<?php
+			echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",filemtime("firmware/timetag")).'</p>';
+		?>
 		<div class="tabs">
 			<ul class="tab-links">
 				<li class="active gp-1"><a href="#tab1">每夜版</a></li>

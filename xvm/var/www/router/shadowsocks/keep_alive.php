@@ -16,12 +16,13 @@
 		<title>定时自动检测ShadowSocks，并且按需重启的脚本</title>
 	</head>
 	<body>
+		<a href="javascript:history.go(-1)">返回</a>
 		<h1 class="center">定时自动检测ShadowSocks，并且按需重启的脚本</h1>
 			<?php
 				echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",$updatetime_page).'</p>';
 			?>
 			<p class="center">
-				<a href="javascript:history.go(-1)">返回</a><a href="#notes">原理</a><a href="#pre">事前准备</a><a href="#steps">修改步骤、内容</a><a href="#faq">FAQ</a>
+				<a href="#notes">原理</a><a href="#pre">事前准备</a><a href="#steps">修改步骤、内容</a><a href="#faq">FAQ</a>
 			</p>
 		<hr />
 		<h2><a name="notes">原理：</a></h2>

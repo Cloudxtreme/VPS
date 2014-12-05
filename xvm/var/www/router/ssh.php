@@ -28,14 +28,11 @@
 		</script>
 	</head>
 	<body>
+		<a href="javascript:history.go(-1)">返回</a>
 		<h1 class="center">使用ssh协议设置 <i class="fa fa-rss"></i> OpenWrt</h1>
-			<?php
-				echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",$updatetime_page).'</p>';
-			?>
-			<p class="center">
-				<a href="javascript:history.go(-1)">返回</a>
-			</p>
-		<hr />
+		<?php
+			echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",$updatetime_page).'</p>';
+		?>
 		<div class="tabs">
 			<ul class="tab-links">
 				<li class="active gp-1"><a href="#tab1"><i class="fa fa-apple"></i> Mac OS X</a></li>

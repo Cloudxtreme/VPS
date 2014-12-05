@@ -12,12 +12,13 @@
 		<title>使用ss-rules透明翻墙的步骤</title>
 	</head>
 	<body>
+		<a href="javascript:history.go(-1)">返回</a>
 		<h1 class="center">使用ss-rules透明翻墙的步骤</h1>
 			<?php
 				echo '<p class="center gray">更新时间：'.date("Y年m月d日 H:i:s",$updatetime_page).'</p>';
 			?>
 			<p class="center">
-				<a href="javascript:history.go(-1)">返回</a><a href="#pre">事前准备</a><a href="#mods">需要修改的文件</a><a href="#steps">修改步骤、内容</a><a href="#faq">FAQ</a>
+				<a href="#pre">事前准备</a><a href="#mods">需要修改的文件</a><a href="#steps">修改步骤、内容</a><a href="#faq">FAQ</a>
 			</p>
 		<hr />
 		<h2><a name="pre">事前准备：</a></h2>
