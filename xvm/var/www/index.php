@@ -39,11 +39,11 @@
 		?>
 		<div class="tabs">
 			<ul class="tab-links">
-				<li class="active gp-1"><a href="#tab1"><i class="fa fa-rss"></i> OpenWrt</a></li>
-				<li class="gp-2"><a href="#tab2"><i class="fa fa-paper-plane"></i> ShadowSocks</a></li>
-				<li class="gp-3"><a href="#tab3"><i class="fa fa-link"></i> ShadowVPN</a></li>
-				<li class="gp-1"><a href="#tab4"><i class="fa fa-usd"></i> 集资明细</a></li>
-				<li class="gp-3"><a href="#tab5"><i class="fa fa-tasks"></i> 可用服务器</a></li>
+				<li class="active gp-1"><a href="#tab1"><i class="fa fa-rss"></i><span class="autohide"> OpenWrt</span></a></li>
+				<li class="gp-2"><a href="#tab2"><i class="fa fa-paper-plane"></i><span class="autohide"> ShadowSocks</span></a></li>
+				<li class="gp-3 tip"><a href="#tab3"><span>ShadowVPN</span><i class="fa fa-link"></i></a></li>
+				<li class="gp-1 tip"><a href="#tab4"><span>集资明细</span><i class="fa fa-usd"></i></a></li>
+				<li class="gp-3 tip"><a href="#tab5"><span>可用服务器</span><i class="fa fa-tasks"></i></a></li>
 			</ul>
 			<div class="tab-content">
 				<div id="tab1" class="tab active">
@@ -87,12 +87,12 @@
 							?>
 							<br />
 							<span class="octicon octicon-info"></span><a href="<?php echo $path_ss; ?>/ss_rules.php#ignore">设置计划任务</a>定时更新 <a class="tip-bottom" href="../../savingfiles.php?filename=<?php echo $ignore ?>">
-							<span style="width: 234px;">
+							<span>
 								<?php
 									echo
 										'文件行数：'.CountLines($ignore)
 										.'<br />文件大小：'.RealSize($ignore)
-										.'<br />更新时间：'.date("Y年m月d日 H:i:s",filemtime($ignore));
+										.'<br />更新时间：'.date("Y年m月d日　H:i:s",filemtime($ignore));
 								?>
 							</span>
 							<i class="fa fa-file-text-o"></i> ignore.list</a>

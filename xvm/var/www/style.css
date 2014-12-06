@@ -167,6 +167,7 @@ p.center > a:not(:last-child)	{ margin-right: .5em; }
 						padding: .1em .6em;
 						width: auto;
 						border-radius: .25em;
+						word-break: keep-all;
 					}
 *.tip span,
 *.tip-top span		{ margin-top: -2.2em; }
@@ -293,6 +294,9 @@ li.active a, li.active a:not([name]):not([href$="png"]):hover	{ border-color: rg
 .tab-links a:not([name]):not([href$="png"]):hover				{ background-color: rgba(0,0,0,.03); }
 li.active a, li.active a:not([name]):not([href$="png"]):hover	{ background-color: #fff; position: relative; z-index: 2; }
 
+.tab-links > li > a > .autohide	{ visibility: hidden; }
+.tab-links > li.active > a > .autohide	{ visibility: visible; }
+
 .tab-content	{
 					padding: 0 1.5em;
 					border-top: 1px solid rgba(0,0,0,.2);
@@ -303,6 +307,7 @@ li.active a, li.active a:not([name]):not([href$="png"]):hover	{ background-color
 
 .tab			{ display: none; }
 .tab.active		{ display: block; }
+
 
 .tab > ul		{ margin-top: 1.5em; }
 
