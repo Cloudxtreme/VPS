@@ -1,5 +1,5 @@
-
 #!/bin/bash
+
 DIR_HOME=/home/openwrt
 DIR_ROOT=$DIR_HOME/trunk
 
