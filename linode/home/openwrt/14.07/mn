@@ -1,10 +1,16 @@
-cd /home/openwrt/14.07/package/chinadns-c && git pull
-cd /home/openwrt/14.07/package/shadowsocks-libev && git pull
-cd /home/openwrt/14.07/package/shadowvpn && git pull
-cd /home/openwrt/14.07
-git pull
-./scripts/feeds update -a
-./scripts/feeds install -a
+#!/bin/bash
+
+DIR_HOME=/home/openwrt
+DIR_ROOT=$DIR_HOME/14.07
+DIR_PKG=$DIR_ROOT/package
+
+cd $DIR_PKG/chinadns-c && git pull
+cd $DIR_PKG/shadowsocks-libev && git pull
+cd $DIR_PKG/shadowvpn && git pull
+cd $DIR_PKG/openwrt-dist-luci && git pull
+
+cd $DIR_ROOT && git pull
+$DIR_ROOT/scripts/feeds update -a && $DIR_ROOT/scripts/feeds install -a
 make defconfig
 make prereq
 make menuconfig
