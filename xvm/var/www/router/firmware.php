@@ -77,19 +77,19 @@
 						<tr>
 							<td>N750</td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_ss.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_ss).'</span><p class="hilight">'.date(" Y-m-d",$updatetime_n750_ss).'</p></a>';
+								echo '<a href="'.$dllink_n750_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_ss).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_n750_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_sv.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_sv).'</span><p class="hilight">'.date(" Y-m-d",$updatetime_n750_sv).'</p></a>';
+								echo '<a href="'.$dllink_n750_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_sv).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_n750_sv).'</p></a>';
 							?></td>
 						</tr>
 						<tr>
 							<td>AG300H</td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_ss.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_ag300h_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_ss).'</span><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_ss).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_ss).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_sv.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_ag300h_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_sv).'</span><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_sv).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_sv).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_sv).'</p></a>';
 							?></td>
 						</tr>
 					</table>
@@ -105,19 +105,19 @@
 						<tr>
 							<td>N750</td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_1407_ss.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_ss).'</span><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_ss).'</p></a>';
+								echo '<a href="'.$dllink_n750_1407_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_ss).'</div><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_1407_sv.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_n750_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_sv).'</span><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_sv).'</p></a>';
+								echo '<a href="'.$dllink_n750_1407_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_sv).'</div><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_sv).'</p></a>';
 							?></td>
 						</tr>
 						<tr>
 							<td>AG300H</td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_1407_ss.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_ag300h_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_ss).'</span><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_ss).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_1407_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_ss).'</div><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_1407_sv.'" class="tip-bottom"><span>文件大小：'.RealSize($dllink_ag300h_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_sv).'</span><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_sv).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_1407_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_sv).'</div><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_sv).'</p></a>';
 							?></td>
 						</tr>
 					</table>
@@ -151,9 +151,9 @@
 				在浏览器中<a href="http://192.168.1.1/" target="_blank">登录路由器</a>后设置：
 				<ol>
 					<li>系统 <span class="octicon octicon-arrow-right"></span> 计划任务：将下列命令黏贴进文本框
-						<blockquote><code class="tip"><span><b>每天5点</b> 更新固件</span>0 5 * * * curl "<p class="hilight">下载链接</p>" > /tmp/ss && sysupgrade -v /tmp/ss</code></blockquote>
+						<blockquote><code class="tip"><div><b>每天5点</b> 更新固件</div>0 5 * * * curl "<p class="hilight">下载链接</p>" > /tmp/ss && sysupgrade -v /tmp/ss</code></blockquote>
 						或者
-						<blockquote><code class="tip"><span><b>每周五5点</b> 更新固件</span>0 5 * * 5 curl "<div class="hilight">下载链接</div>" > /tmp/ss && sysupgrade -v /tmp/ss</code></blockquote>
+						<blockquote><code class="tip"><div><b>每周五5点</b> 更新固件</div>0 5 * * 5 curl "<p class="hilight">下载链接</p>" > /tmp/ss && sysupgrade -v /tmp/ss</code></blockquote>
 					</li>
 					<li>点击<span class="btn">提交</span>按钮。</li>
 				</ol>

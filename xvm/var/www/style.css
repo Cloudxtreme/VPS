@@ -159,25 +159,26 @@ p.center > a:not(:last-child)	{ margin-right: .5em; }
 						left: 45%;
 						z-index: 99;
 					}*/
-*.tip-top span,
-*.tip-bottom span,
-*.tip-right span,
-*.tip span			{
+*.tip-top div,
+*.tip-bottom div,
+*.tip-right div,
+*.tip div			{
 						display: none;
 						padding: .1em .6em;
 						width: auto;
 						border-radius: .25em;
 						word-break: keep-all;
+						white-space: nowrap;
 					}
-*.tip span,
-*.tip-top span		{ margin-top: -2.2em; }
-*.tip-right span	{ margin-left: 1em; }
-*.tip-bottom span	{ margin-top: 2.4em; }
+*.tip div,
+*.tip-top div		{ margin-top: -2.2em; }
+*.tip-right di		{ margin-left: 1em; }
+*.tip-bottom div	{ margin-top: 2.4em; }
 
-*.tip-top:hover span,
-*.tip-bottom:hover span,
-*.tip-right:hover span,
-*.tip:hover span	{
+*.tip-top:hover div,
+*.tip-bottom:hover div,
+*.tip-right:hover div,
+*.tip:hover div	{
 						display: inline-block;
 						position: absolute;
 						color: #fff;
@@ -186,7 +187,7 @@ p.center > a:not(:last-child)	{ margin-right: .5em; }
 						background-color: rgba(31,31,31,.9);
 					}
 
-*.tip:hover span > *	{ color: #fff; }
+*.tip:hover div > *	{ color: #fff; }
 
 /**.tip-top:hover span::after,
 *.tip-bottom:hover span::after,
@@ -294,8 +295,8 @@ li.active a, li.active a:not([name]):not([href$="png"]):hover	{ border-color: rg
 .tab-links a:not([name]):not([href$="png"]):hover				{ background-color: rgba(0,0,0,.03); }
 li.active a, li.active a:not([name]):not([href$="png"]):hover	{ background-color: #fff; position: relative; z-index: 2; }
 
-.tab-links > li > a > .autohide	{ visibility: hidden; }
-.tab-links > li.active > a > .autohide	{ visibility: visible; }
+.tab-links > li > a > .autohide			{ font-size: 0%; }
+.tab-links > li.active > a > .autohide	{ font-size: 100%; }
 
 .tab-content	{
 					padding: 0 1.5em;
