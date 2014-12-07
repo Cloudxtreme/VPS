@@ -8,8 +8,6 @@ git clone git://git.openwrt.org/14.07/openwrt.git $DIR_ROOT
 git clone https://github.com/aa65535/openwrt-chinadns.git $DIR_ROOT/package/chinadns-c
 git clone https://github.com/aa65535/openwrt-shadowsocks.git $DIR_ROOT/package/shadowsocks-libev
 git clone https://github.com/aa65535/openwrt-shadowvpn.git $DIR_ROOT/package/shadowvpn
-git clone https://github.com/aa65535/openwrt-dist-luci.git $DIR_ROOT/package/openwrt-dist-luci
-mkdir $DIR_ROOT/dl
 ln -s $DIR_HOME/dl $DIR_ROOT/dl
 
 # scripts - mn
