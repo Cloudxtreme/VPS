@@ -55,7 +55,7 @@
 								<ol>
 									<li>随便起个好记的名字；</li>
 									<li><span class="hilight">Protocol:</span> 选择 <tt><i class="fa fa-lock"></i> SFTP</tt>；</li>
-									<li><span class="hilight">Server:</span> 填写 <tt class="tip"><span>路由器的IP</span>192.168.1.1</tt>；</li>
+									<li><span class="hilight">Server:</span> 填写 <tt class="tip"><div>路由器的IP</div>192.168.1.1</tt>；</li>
 									<li><span class="hilight">User Name:</span> 填写 <tt>root</tt>；</li>
 									<li>
 										<span class="hilight">Password:</span> 输入框留空，点按密码输入框右侧钥匙按钮，导入ssh私钥；
@@ -85,7 +85,7 @@
 								<ol>
 									<li>点按左上角<span class="hilight">新建站点</span>；</li>
 									<li><span class="hilight">文件协议</span> 选择 <tt>SFTP</tt> 或者 <tt>SCP</tt>；</li>
-									<li><span class="hilight">主机名</span> 填写 <tt class="tip"><span>路由器的IP</span>192.168.1.1</tt>；</li>
+									<li><span class="hilight">主机名</span> 填写 <tt class="tip"><div>路由器的IP</div>192.168.1.1</tt>；</li>
 									<li><span class="hilight">用户名</span> 填写 <tt>root</tt>；</li>
 									<li><span class="hilight">密码</span> 留空，点按下方<span class="btn">高级</span>按钮；</li>
 									<li>左侧树状目录定位至 SSH <span class="octicon octicon-arrow-right"></span> 验证，选取事先准备好的私钥文件；</li>
