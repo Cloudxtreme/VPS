@@ -68,7 +68,7 @@
 								<li><p class="btn">ポイント</p> 「<strong>店铺类型</strong>」から「<strong>天猫(商城)</strong>」を選び、天猫の店舗のみ表示させる。</li>
 								最終的に、下記のような画面にたどり着くかと思う。
 								<br />
-								<a class="tip-bottom" href="http://i.share.pho.to/d3cb0f6f_o.png"><span>拡大表示</span><img style="margin: .5em auto; height: 200px;" src="http://i.share.pho.to/d3cb0f6f_o.png" /></a>
+								<a class="tip-bottom" href="http://i.share.pho.to/d3cb0f6f_o.png"><div>拡大表示</div><img style="margin: .5em auto; height: 200px;" src="http://i.share.pho.to/d3cb0f6f_o.png" /></a>
 								<br />
 								<a href="http://s.taobao.com/search?initiative_id=staobaoz_20120515&q=%E8%BF%9E%E8%A1%A3%E8%A3%99&app=shopsearch&fs=1&isb=1&goodrate=" target="_blank">直通リンク</a>
 							</ol>
@@ -76,7 +76,7 @@
 						<br />
 						<li>天猫で独自のブランドでキーワード関連の商品を販売している店舗：
 							<br />
-							<a class="tip-bottom" href="http://i.share.pho.to/387ee0e1_o.png"><span>拡大表示</span><img style="margin: .5em auto; height: 200px;" src="http://i.share.pho.to/387ee0e1_o.png" /></a>
+							<a class="tip-bottom" href="http://i.share.pho.to/387ee0e1_o.png"><div>拡大表示</div><img style="margin: .5em auto; height: 200px;" src="http://i.share.pho.to/387ee0e1_o.png" /></a>
 							<br />
 							<a href="http://list.tmall.com/search_product.htm?q=%C1%AC%D2%C2%C8%B9&type=p&spm=a220m.1000858.a2227oh.d100&xl=lianyiqun_1&from=.list.pc_1_suggest" target="_blank">直通リンク</a>
 						</li>

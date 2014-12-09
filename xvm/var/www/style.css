@@ -172,7 +172,7 @@ p.center > a:not(:last-child)	{ margin-right: .5em; }
 					}
 *.tip div,
 *.tip-top div		{ margin-top: -2.2em; }
-*.tip-right di		{ margin-left: 1em; }
+*.tip-right div		{ margin-left: 1em; }
 *.tip-bottom div	{ margin-top: 2.4em; }
 
 *.tip-top:hover div,
@@ -188,6 +188,11 @@ p.center > a:not(:last-child)	{ margin-right: .5em; }
 					}
 
 *.tip:hover div > *	{ color: #fff; }
+
+*.active.tip-top:hover div,
+*.active.tip-bottom:hover div,
+*.active.tip-right:hover div,
+*.active.tip:hover div	{ display: none; }
 
 /**.tip-top:hover span::after,
 *.tip-bottom:hover span::after,

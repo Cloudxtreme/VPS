@@ -52,7 +52,7 @@
 						</tr>
 						<tr>
 							<td>パソコン・オフィス用品</td>
-							<td>Kindle<span class="tip"><tt class="f75"><span style="font-size: 100%;">Kindle Paperwhite 2</span>KPW2</tt></span>　Apple<tt class="f75">全製品</tt>　Filco、HHKB<tt class="f75">キーボード</tt><br />HP<span class="tip"><tt class="f75"><span style="font-size: 100%;">自作NASの資材として、コスパの良さが有名</span>N54L</tt></span>　三菱鉛筆<tt class="f75">文房具</tt>　KOKUYO<tt class="f75">ノート</tt></td>
+							<td>Kindle<span class="tip"><tt class="f75"><div style="font-size: 100%;">Kindle Paperwhite 2</div>KPW2</tt></span>　Apple<tt class="f75">全製品</tt>　Filco、HHKB<tt class="f75">キーボード</tt><br />HP<span class="tip"><tt class="f75"><div style="font-size: 100%;">自作NASの資材として、コスパの良さが有名</div>N54L</tt></span>　三菱鉛筆<tt class="f75">文房具</tt>　KOKUYO<tt class="f75">ノート</tt></td>
 						</tr>
 						<tr>
 							<td>ホーム＆キッチン</td>
@@ -95,7 +95,7 @@
 					<table class="noborder">
 						<tr class="noborder">
 							<td class="noborder">
-								<a class="tip-bottom" href="http://i.share.pho.to/69de8695_o.png"><span>拡大表示</span><img style="height: 1000px;" src="http://i.share.pho.to/69de8695_o.png" /></a>
+								<a class="tip-bottom" href="http://i.share.pho.to/69de8695_o.png"><div>拡大表示</div><img style="height: 1000px;" src="http://i.share.pho.to/69de8695_o.png" /></a>
 							</td>
 							<td class="noborder">
 								<ol>
@@ -165,14 +165,14 @@
 					<h4>検索傾向</h4>
 					下記キーワードの組み合わせを入力し、オートコンプリートで傾向を調べてみました。
 					<br />
-					<tt>日本</tt><tt class="tip-top"><span>日本語訳：直送</span>直邮</tt><tt class="tip-top"><span>日本語訳：代行購入</span>代购</tt><tt>本土</tt>	
+					<tt>日本</tt><tt class="tip-top"><div>日本語訳：直送</div>直邮</tt><tt class="tip-top"><div>日本語訳：代行購入</div>代购</tt><tt>本土</tt>	
 					<ul>
 						<li>
 							<tt>日本</tt>
 							<table class="noborder">
 								<tr class="noborder">
 									<td class="noborder">
-										<a class="tip-bottom" href="http://i.share.pho.to/937c9a23_o.png"><span>拡大表示</span><img style="width: 400px;" src="http://i.share.pho.to/937c9a23_o.png" /></a>
+										<a class="tip-bottom" href="http://i.share.pho.to/937c9a23_o.png"><div>拡大表示</div><img style="width: 400px;" src="http://i.share.pho.to/937c9a23_o.png" /></a>
 									</td>
 									<td class="noborder">
 										<ol>
@@ -188,11 +188,11 @@
 							</table>
 						</li>
 						<li>
-							<tt>日本</tt>+<tt class="tip-top"><span>日本語訳：直送</span>直邮</tt>
+							<tt>日本</tt>+<tt class="tip-top"><div>日本語訳：直送</div>直邮</tt>
 							<table class="noborder">
 								<tr class="noborder">
 									<td class="noborder">
-										<a class="tip-bottom" href="http://i.share.pho.to/c7e18e1a_o.png"><span>拡大表示</span><img style="width: 400px;" src="http://i.share.pho.to/c7e18e1a_o.png" /></a>
+										<a class="tip-bottom" href="http://i.share.pho.to/c7e18e1a_o.png"><div>拡大表示</div><img style="width: 400px;" src="http://i.share.pho.to/c7e18e1a_o.png" /></a>
 									</td>
 									<td class="noborder">
 										<ol>
@@ -207,11 +207,11 @@
 							</table>
 						</li>
 						<li>
-							<tt>日本</tt>+<tt class="tip-top"><span>日本語訳：代行購入</span>代购</tt>
+							<tt>日本</tt>+<tt class="tip-top"><div>日本語訳：代行購入</div>代购</tt>
 							<table class="noborder">
 								<tr class="noborder">
 									<td class="noborder">
-										<a class="tip-bottom" href="http://i.share.pho.to/e6159cf2_o.png"><span>拡大表示</span><img style="width: 400px;" src="http://i.share.pho.to/e6159cf2_o.png" /></a>
+										<a class="tip-bottom" href="http://i.share.pho.to/e6159cf2_o.png"><div>拡大表示</div><img style="width: 400px;" src="http://i.share.pho.to/e6159cf2_o.png" /></a>
 									</td>
 									<td class="noborder">
 										<ol>
@@ -231,7 +231,7 @@
 							<table class="noborder">
 								<tr class="noborder">
 									<td class="noborder">
-										<a class="tip-bottom" href="http://i.share.pho.to/b22c22b8_o.png"><span>拡大表示</span><img style="width: 400px;" src="http://i.share.pho.to/b22c22b8_o.png" /></a>
+										<a class="tip-bottom" href="http://i.share.pho.to/b22c22b8_o.png"><div>拡大表示</div><img style="width: 400px;" src="http://i.share.pho.to/b22c22b8_o.png" /></a>
 									</td>
 									<td class="noborder">
 										<ol>
@@ -254,12 +254,12 @@
 					<table class="noborder">
 						<tr class="noborder">
 							<td class="noborder">
-								<a class="tip-bottom" href="http://i.share.pho.to/331bbbd8_o.png"><span>拡大表示</span><img style="width: 400px;" src="http://i.share.pho.to/331bbbd8_o.png" /></a>
+								<a class="tip-bottom" href="http://i.share.pho.to/331bbbd8_o.png"><div>拡大表示</div><img style="width: 400px;" src="http://i.share.pho.to/331bbbd8_o.png" /></a>
 							</td>
 							<td class="noborder">
 								<ul>
 									<li>
-										<span class="tip">出品者のサポートとしてタオバオが公式的で<span>タオバオの登録メンバーのみに開示</span><b>半公開的</b>に開設したページ。</span>
+										<span class="tip">出品者のサポートとしてタオバオが公式的で<div>タオバオの登録メンバーのみに開示</div><b>半公開的</b>に開設したページ。</span>
 									</li>
 									<li>ご覧の通り、傾向、年齢層、性別別、星座別などいろいろ見える化されています。</li>
 									<li>
