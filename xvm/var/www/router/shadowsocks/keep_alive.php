@@ -57,9 +57,9 @@
 								.file_get_contents($check)
 								.'</pre>
 								<br />
-								点击<a class="tip" href="../../savingfiles.php?filename=router/shadowsocks/'.$check.'"><span style="width: 234px;">更新时间：'
+								点击<a class="tip" href="../../savingfiles.php?filename=router/shadowsocks/'.$check.'"><div>更新时间：'
 								.date("Y年m月d日 H:i:s",filemtime($check))
-								.'</span>此处</a>下载脚本，保存备用。';
+								.'</div>此处</a>下载脚本，保存备用。';
 							?>
 						</li>
 						<br />
@@ -71,9 +71,9 @@
 								.file_get_contents($check_plus)
 								.'</pre>
 								<br />
-								点击<a class="tip" href="../../savingfiles.php?filename=router/shadowsocks/'.$check_plus.'"><span style="width: 234px;">更新时间：'
+								点击<a class="tip" href="../../savingfiles.php?filename=router/shadowsocks/'.$check_plus.'"><div>更新时间：'
 								.date("Y年m月d日 H:i:s",filemtime($check_plus))
-								.'</span>此处</a>下载脚本，保存备用。';
+								.'</div>此处</a>下载脚本，保存备用。';
 							?>
 						</li>
 					</ol>
@@ -94,9 +94,9 @@
 					在浏览器中<a href="http://192.168.1.1/" target="_blank">登录路由器</a>后设置：
 					<ol>
 						<li>系统 <span class="octicon octicon-arrow-right"></span> 计划任务：将下列命令黏贴进文本框；
-						<blockquote><code class="tip"><span>每隔10分钟运行一次</span>*/10 * * * * sh /etc/shadowsocks/check<span>脚本1</span></code></blockquote>
+						<blockquote><code class="tip"><div>每隔10分钟运行一次</div>*/10 * * * * sh /etc/shadowsocks/check<div>脚本1</div></code></blockquote>
 						或者
-						<blockquote><code class="tip"><span>每隔10分钟运行一次</span>*/10 * * * * sh /etc/shadowsocks/check_plus<span>脚本2</span></code></blockquote>
+						<blockquote><code class="tip"><div>每隔10分钟运行一次</div>*/10 * * * * sh /etc/shadowsocks/check_plus<div>脚本2</div></code></blockquote>
 						</li>
 						<li>点击<span class="btn">提交</span>按钮。</li>
 					</ol>
