@@ -1,0 +1,10 @@
+{
+	"server":		"106.186.115.170",
+	"local_port":		1082,
+	"port_password":	{
+				"8888":	"f797-113b-1d0a-43bc"
+				},
+	"timeout":          60,
+	"method":           "rc4-md5"
+}
+
