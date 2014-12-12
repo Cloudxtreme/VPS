@@ -94,19 +94,19 @@ server=127.0.0.1#1053</pre>
 					在浏览器中<a href="http://192.168.1.1/" target="_blank">登录路由器</a>后设置：
 					<ol>
 						<li>系统 <span class="octicon octicon-arrow-right"></span> 计划任务：将下列命令黏贴进文本框；
-						<blockquote><code class="tip"><span>每天3点50分更新ignore.list，然后重启ShadowSocks服务</span>50 3 * * * curl "http://104.128.93.119/router/shadowsocks/ignore.list" > /tmp/ignore.list && mv -f /tmp/ignore.list /etc/shadowsocks/ignore.list && /etc/init.d/shadowsocks restart</code></blockquote>
+						<blockquote><code class="tip"><div>每天3点50分更新ignore.list，然后重启ShadowSocks服务</div>50 3 * * * curl "http://104.128.93.119/router/shadowsocks/ignore.list" > /tmp/ignore.list && mv -f /tmp/ignore.list /etc/shadowsocks/ignore.list && /etc/init.d/shadowsocks restart</code></blockquote>
 						</li>
 						<li>点击<span class="btn">提交</span>按钮。
 							<br />
 							<span class="octicon octicon-info"></span> 下载随时更新的 <a class="tip-bottom" href="../../savingfiles.php?filename=router/shadowsocks/ignore.list">
-							<span style="width: 230px;">
+							<div>
 								<?php
 									echo
 										'文件行数：'.CountLines("ignore.list")
 										.'<br />文件大小：'.RealSize("ignore.list")
 										.'<br />更新时间：'.date("Y年m月d日 H:i:s",filemtime("ignore.list"));
 								?>
-							</span>
+							</div>
 							<i class="fa fa-file-text-o"></i> ignore.list</a>
 						</li>
 					</ol>

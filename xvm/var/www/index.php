@@ -92,7 +92,7 @@
 									echo
 										'文件行数：'.CountLines($ignore)
 										.'<br />文件大小：'.RealSize($ignore)
-										.'<br />更新时间：'.date("Y年m月d日　H:i:s",filemtime($ignore));
+										.'<br />更新时间：'.date("Y年m月d日 H:i:s",filemtime($ignore));
 								?>
 							</div>
 							<i class="fa fa-file-text-o"></i> ignore.list</a>
