@@ -1,5 +1,6 @@
 @import url(./fonts/octicons/octicons.css);
 @import url(./fonts/meslo.css);
+@import url(./fonts/ip.css);
 /*@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);*/
 @import url(./fonts/font-awesome/css/font-awesome.min.css);
 /*@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);*/
@@ -487,3 +488,11 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 .safe		{ color: rgb(75,150,75);	background-color: rgba(75,150,75,.12); }
 .hilight:hover	{ background-color: rgba(65,131,196,.25); }
 .safe:hover		{ background-color: rgba(75,150,75,.25); }
+
+.ip				{ font-family: 'ip'; font-size: 95%; }
+
+.text-primary	{ color: rgb(48,124,183); }
+.text-success	{ color: rgb(88,181,92); }
+.text-info		{ color: rgb(86,192,222); }
+.text-warning	{ color: rgb(241,173,77); }
+.text-danger	{ color: rgb(219,88,78); }
