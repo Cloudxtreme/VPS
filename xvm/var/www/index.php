@@ -127,7 +127,7 @@
 						<tr>
 							<td>2014-11-19</td>
 							<td class="tip"><div>年租金 $9.99 用于 BangwagonHost VPS</div><i class="fa fa-minus-circle text-danger"></i> 62.15 元</td>
-							<td><?php echo $blance -= 62.15; ?> 元</td>
+							<td><?php echo $blance += -62.15; ?> 元</td>
 						</tr>
 						<tr>
 							<td>2014-11-28</td>
@@ -137,7 +137,7 @@
 						<tr>
 							<td>2014-11-28</td>
 							<td class="tip"><div>月租金 $7.02 用于 Linode VPS</div><i class="fa fa-minus-circle text-danger"></i> 43.68 元</td>
-							<td><?php echo $blance -= 43.68; ?> 元</td>
+							<td><?php echo $blance += -43.68; ?> 元</td>
 						</tr>
 						<tr>
 							<td>2014-11-29</td>
@@ -167,7 +167,7 @@
 						<tr>
 							<td>2014-11-29</td>
 							<td class="tip"><div>月租金用于 Kvmla VPS</div><i class="fa fa-minus-circle text-danger"></i> 18 元</td>
-							<td><?php echo $blance -= 18; ?> 元</td>
+							<td><?php echo $blance += -18; ?> 元</td>
 						</tr>
 						<tr>
 							<td>2014-12-1</td>
@@ -177,12 +177,17 @@
 						<tr>
 							<td>2014-12-1</td>
 							<td class="tip"><div>月租金 $5 用于 DigitalOcean VPS</div><i class="fa fa-minus-circle text-danger"></i> 31.11 元</td>
-							<td><?php echo $blance -= 31.11; ?> 元</td>
+							<td><?php echo $blance += -31.11; ?> 元</td>
 						</tr>
 						<tr>
 							<td>2014-12-22</td>
 							<td class="tip"><div>来自 <i class="fa fa-user"></i> 神往</div><i class="fa fa-plus-circle text-success"></i> 100 元</td>
 							<td><?php echo $blance += 100; ?> 元</td>
+						</tr>
+						<tr>
+							<td>2014-12-23</td>
+							<td class="tip"><div>月租金 $5 用于 DigitalOcean VPS</div><i class="fa fa-minus-circle text-danger"></i> 31.11 元</td>
+							<td><?php echo $blance += -31.11; ?> 元</td>
 						</tr>
 					</table>
 				</div>
@@ -194,30 +199,26 @@
 							<td>VPS 运营商</td>
 							<td>机房位置</td>
 							<td>服务端版本</td>
-							<td>到期日期</td>
 							<td>价格</td>
-							<td>续费计划</td>
+							<td>到期日期</td>
 						</tr>
 						<tr>
-							<td class="ip">&#241;&#240;&#244;&#239;&#242;&#242;&#244;&#239;&#241;&#243;&#245;&#239;&#244;&#243;</td>
-							<td>BandwagonHost</td>
+							<td class="ip left">&#241;&#240;&#244;&#239;&#242;&#242;&#244;&#239;&#241;&#243;&#245;&#239;&#244;&#243;</td>
+							<td rowspan="2">Bandwagon Host</td>
 							<td>美国 加州</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
-							<td>2015-4-2</td>
-							<td>年费 $4.99</td>
-							<td><i class="fa fa-toggle-off"></i></td>
+							<td>$4.99 / 年</td>
+							<td>2015-4-2 <i class="fa fa-toggle-on"></i></td>
 						</tr>
 						<tr>
-							<td class="ip">&#241;&#240;&#244;&#239;&#242;&#242;&#244;&#239;&#241;&#243;&#244;&#239;&#242;&#242;&#249;</td>
-							<td>BandwagonHost</td>
+							<td class="ip left">&#241;&#240;&#244;&#239;&#242;&#242;&#244;&#239;&#241;&#243;&#244;&#239;&#242;&#242;&#249;</td>
 							<td>美国 加州</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
-							<td>2015-11-19</td>
-							<td>年费 $9.99</td>
-							<td><i class="fa fa-toggle-off"></i></td>
+							<td>$9.99 / 年</td>
+							<td>2015-11-19 <i class="fa fa-toggle-on"></i></td>
 						</tr>
 						<tr>
-							<td class="ip">
+							<td class="ip left">
 								&#241;&#240;&#244;&#239;&#241;&#242;&#248;&#239;&#249;&#242;&#239;&#241;&#244;&#246;
 								<br />
 								&#241;&#240;&#244;&#239;&#241;&#242;&#248;&#239;&#249;&#242;&#239;&#242;&#244;&#246;
@@ -229,27 +230,24 @@
 							<td>XVM Labs</td>
 							<td>美国 加州</td>
 							<td><span class="hilight">go</span></td>
-							<td>2015-6-19</td>
-							<td>年费 $4.99</td>
-							<td><i class="fa fa-toggle-off"></i></td>
+							<td>$4.99 / 年</td>
+							<td>2015-6-19 <i class="fa fa-toggle-on"></i></td>
 						</tr>
 						<tr>
-							<td class="ip">&#241;&#240;&#246;&#239;&#241;&#248;&#246;&#239;&#241;&#241;&#245;&#239;&#241;&#247;&#240;</td>
+							<td class="ip left">&#241;&#240;&#246;&#239;&#241;&#248;&#246;&#239;&#241;&#241;&#245;&#239;&#241;&#247;&#240;</td>
 							<td>Linode</td>
 							<td>日本 东京</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
-							<td>2014-12-31</td>
-							<td>月费 $10</td>
-							<td><i class="fa fa-toggle-off"></i></td>
+							<td>$10 / 月</td>
+							<td>2014-12-31 <i class="fa fa-toggle-on"></i></td>
 						</tr>
 						<tr>
-							<td class="ip">&#241;&#242;&#248;&#239;&#241;&#249;&#249;&#239;&#242;&#242;&#242;&#239;&#241;&#247;&#247;</td>
+							<td class="ip left">&#241;&#242;&#248;&#239;&#241;&#249;&#249;&#239;&#242;&#242;&#242;&#239;&#241;&#247;&#247;</td>
 							<td>DigitalOcean</td>
 							<td>新加坡</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
-							<td>2014-12-31</td>
-							<td>月费 $5</td>
-							<td><i class="fa fa-toggle-on"></i></td>
+							<td>$5 / 月</td>
+							<td>2015-1-31 <i class="fa fa-toggle-on"></i></td>
 						</tr>
 					</table>
 				</div>

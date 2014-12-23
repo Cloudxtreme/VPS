@@ -393,6 +393,9 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 .fa-tasks		{ color: rgb(85,119,136); }
 .fa-windows		{ color: rgb(0,182,242); }
 
+.fa-toggle-off	{ color: rgba(0,0,0,.5); }
+.fa-toggle-on	{ color: rgb(88,181,92); }
+
 /*	自定义class	*/
 
 .f50			{ font-size: 50%; }
@@ -400,7 +403,9 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 .f80			{ font-size: 80%; }
 .f85			{ font-size: 85%; }
 
+.left			{ text-align: left; }
 .center			{ text-align: center; }
+.right			{ text-align: right; }
 
 .column-2,
 .column-3		{
@@ -445,6 +450,7 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 					font-weight: bold;
 				}
 .hilight:hover	{ text-shadow: 0 .2em 1em rgba(65,131,196,.75); }*/
+
 
 .btn,
 .cmd,
