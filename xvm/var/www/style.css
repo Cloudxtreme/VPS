@@ -445,6 +445,17 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 					box-shadow: none !important;
 				}
 
+.on,
+.off			{
+					display: inline-block;
+					background-color: #fff;
+					width: 22px;
+					height: 14px;
+					border-radius: 1em;
+				}
+.on				{ box-shadow: inset 8px 0 0 2px rgb(88,181,92), inset 0 0 0 2px rgb(88,181,92); }
+.off			{ box-shadow: inset -8px 0 0 2px rgb(179,179,179), inset 0 0 0 2px rgb(179,179,179); }
+
 /*.hilight		{
 					color: rgb(65,131,196);
 					font-weight: bold;

@@ -208,14 +208,14 @@
 							<td>美国 加州</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
 							<td>$4.99 / 年</td>
-							<td>2015-4-2 <i class="fa fa-toggle-on"></i></td>
+							<td>2015-4-2 <span class="on"></span></td>
 						</tr>
 						<tr>
 							<td class="ip left">&#241;&#240;&#244;&#239;&#242;&#242;&#244;&#239;&#241;&#243;&#244;&#239;&#242;&#242;&#249;</td>
 							<td>美国 加州</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
 							<td>$9.99 / 年</td>
-							<td>2015-11-19 <i class="fa fa-toggle-on"></i></td>
+							<td>2015-11-19 <span class="on"></span></td>
 						</tr>
 						<tr>
 							<td class="ip left">
@@ -231,7 +231,7 @@
 							<td>美国 加州</td>
 							<td><span class="hilight">go</span></td>
 							<td>$4.99 / 年</td>
-							<td>2015-6-19 <i class="fa fa-toggle-on"></i></td>
+							<td>2015-6-19 <span class="on"></span></td>
 						</tr>
 						<tr>
 							<td class="ip left">&#241;&#240;&#246;&#239;&#241;&#248;&#246;&#239;&#241;&#241;&#245;&#239;&#241;&#247;&#240;</td>
@@ -239,7 +239,7 @@
 							<td>日本 东京</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
 							<td>$10 / 月</td>
-							<td>2014-12-31 <i class="fa fa-toggle-on"></i></td>
+							<td>2014-12-31 <span class="on"></span></td>
 						</tr>
 						<tr>
 							<td class="ip left">&#241;&#242;&#248;&#239;&#241;&#249;&#249;&#239;&#242;&#242;&#242;&#239;&#241;&#247;&#247;</td>
@@ -247,7 +247,7 @@
 							<td>新加坡</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
 							<td>$5 / 月</td>
-							<td>2015-1-31 <i class="fa fa-toggle-on"></i></td>
+							<td>2015-1-31 <span class="on"></span></td>
 						</tr>
 					</table>
 				</div>
