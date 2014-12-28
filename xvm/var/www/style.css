@@ -1,4 +1,6 @@
 @import url(./fonts/octicons/octicons.css);
+@import url(./fonts/ProximaNova.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 @import url(./fonts/meslo.css);
 @import url(./fonts/ip.css);
 /*@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);*/
@@ -7,7 +9,7 @@
 
 /*	全局字体、效果	*/
 *	{
-		font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei",sans-serif;
+		font-family: PN,cwTeXHei,"Helvetica Neue","Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei",sans-serif;
 		font-weight: normal;
 		font-style: normal;
 		font-size: 1em;
@@ -78,8 +80,8 @@ a:not([name])		{
 						color: rgb(65,131,196);
 						border-bottom: none;
 						display: inline-block;
-						margin: 0 -.4375em;
-						padding: 0 .4375em;
+						margin: -.1875em -.4375em 0;
+						padding: .1875em .4375em 0;
 						background-color: transparent;
 						border: .0625em solid transparent;
 						border-radius: .25em;
@@ -109,7 +111,7 @@ a[href*="dropbox"]::before	{ content: '\f16b'; margin: auto .125em; font-size: 1
 a[href*="scripts"]::before	{ content: '\f0f6'; margin: auto .1875em; font-size: .875em; vertical-align: 2%; }
 
 a[href$="exe"]::before,
-a[href$="bin"]::before	{
+a[href$="bin"]::before		{
 								font-family: 'octicons';
 								content: '\f0a8';
 								margin: auto .1875em;
