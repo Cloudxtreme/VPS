@@ -8,6 +8,7 @@ CONFIG=$DIR_ROOT/n750-ss.config
 
 cd $DIR_PKG/chinadns-c && git pull
 cd $DIR_PKG/openwrt-dist-luci && git pull
+cd $DIR_PKG/redsocks2 && git pull
 cd $DIR_PKG/shadowsocks-libev && git pull
 cd $DIR_PKG/shadowvpn && git pull
 cd $DIR_ROOT && git pull
