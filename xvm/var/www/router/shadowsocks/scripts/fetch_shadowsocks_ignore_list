@@ -7,24 +7,9 @@ if [ -e $PATH/ignore.list ]; then
 
 fi
 
-/usr/bin/curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list;
+while [ ! -s "$PATH/ignore.list" ]; do
+	/usr/bin/curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list;
+done
 
-
-if [ -s "$PATH/ignore.list" ]; then
-	/usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
-	
-else
-	/bin/rm $PATH/ignore.list;
-	/usr/bin/wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list;
-
-	if [ -s "$PATH/ignore.list" ]; then
-		/usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
-
-	else
-		/bin/rm $PATH/ignore.list;
-		sleep 30;
-		/bin/sh $PATH/scripts/fetch_shadowsocks_ignore_list;
-
-	fi
-	
-fi
+/usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
+/bin/cat $PATH/ip-ptc >> $PATH/ignore.list;

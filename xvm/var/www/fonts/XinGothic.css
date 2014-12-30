@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'XinGothic';
+	src: url('XinGothic/400.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'XinGothic';
+	src: url('XinGothic/700.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
