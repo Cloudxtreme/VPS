@@ -12,3 +12,4 @@ while [ ! -s "$PATH/ignore.list" ]; do
 done
 
 /usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
+/bin/cat  $PATH/ip-ptc >> $PATH/ignore.list;
