@@ -11,6 +11,6 @@ while [ ! -s "$PATH/ignore.list" ]; do
 	/usr/bin/curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > $PATH/ignore.list;
 done
 
-/usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
 /bin/echo "100.100.100.100/32" >> $PATH/ignore.list;
+/usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
 /bin/cat  $PATH/ip-ptc >> $PATH/ignore.list;
