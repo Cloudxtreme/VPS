@@ -13,4 +13,5 @@ done
 
 /bin/echo "100.100.100.100/32" >> $PATH/ignore.list;
 /usr/bin/python $PATH/scripts/ip.py >> $PATH/ignore.list;
+/bin/cat  $PATH/ip-cn >> $PATH/ignore.list;
 /bin/cat  $PATH/ip-ptc >> $PATH/ignore.list;
