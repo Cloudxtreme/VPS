@@ -14,7 +14,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 
-40 15 * * *	root	sh /var/www/router/shadowsocks/scripts/fetch_shadowsocks_ignore_list
+40 15 * * *	root	cd /var/www/router/shadowsocks && mv -f ./ignore.list ./ignore.list.old && curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | /usr/bin/awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > /var/www/router/shadowsocks/ignore.list && echo "100.100.100.100/32" >> ./ignore.list && python ./scripts/ip.py >> ./ignore.list && cat ./ip-cn ./ip-ptc >> ./ignore.list
 00 16 * * *	root	sh /home/bkup/xvm/bkup
 30 16 * * 1-6	root	reboot
 30 16 * * 0	root	apt-get update && apt-get upgrade -y && reboot

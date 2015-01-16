@@ -88,7 +88,7 @@
 								<sup>'.date("Y-m-d H:i",filemtime("$path_ss/ss_rules.php")).'</sup>';
 							?>
 							<br />
-							<span class="octicon octicon-info"></span><a href="<?php echo $path_ss; ?>/ss_rules.php#ignore">设置计划任务</a>定时更新 <a class="tip-bottom" href="../../savingfiles.php?filename=<?php echo $ignore ?>">
+							<span class="octicon octicon-info"></span><a href="<?php echo $path_ss; ?>/ss_rules.php#tab4">设置计划任务</a>定时更新 <a class="tip-bottom" href="../../savingfiles.php?filename=<?php echo $ignore ?>">
 							<div>
 								<?php
 									echo

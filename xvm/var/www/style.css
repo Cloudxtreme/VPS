@@ -18,7 +18,8 @@
 		width: auto;
 		background-clip: padding-box;
 		box-sizing: border-box;
-		/*-moz-osx-font-smoothing: grayscale;*/
+/*		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;*/
 		transition: all .3s ease;
 		z-index: 0;
 	}
@@ -379,7 +380,10 @@ table + div.dl:hover	{
 
 table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transparent; border-color: transparent; }
 
-.tab > table	{ margin-top: 1.25em; }
+.tab > table		{ margin-top: 1.25em; }
+
+th,
+tr > td:first-child	{ word-break: keep-all; white-space: nowrap; }
 
 /*	fa	*/
 .fa				{ font-size: 110%; }
@@ -401,11 +405,17 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 
 /*	自定义class	*/
 
+.bold			{ font-weight: bold; }
+
 .f50			{ font-size: 50%; }
 .f75			{ font-size: 75%; }
 .f80			{ font-size: 80%; }
 .f85			{ font-size: 85%; }
+.f150			{ font-size: 150%; }
+.f175			{ font-size: 175%; }
+.f200			{ font-size: 200%; }
 
+.top			{ vertical-align: top; }
 .left			{ text-align: left; }
 .center			{ text-align: center; }
 .right			{ text-align: right; }
@@ -442,7 +452,7 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 .deleted		{ text-decoration: line-through; }
 
 .noborder		{
-					padding: 0 .75em;
+					padding: .5em .75em;
 					border: none !important;
 					background-color: transparent !important;
 					box-shadow: none !important;
