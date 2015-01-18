@@ -33,11 +33,15 @@ input3	=	['106.186.115.1', '106.187.95.148']
 # DigitalOcean SGP
 input4	=	['128.199.192.1', '128.199.236.18']
 
+# Sakura Tokyo
+input5	=	['160.16.80.1', '160.16.81.30']
+
 # Neobux
-input5	=	['103.28.248.91', '103.28.250.91']
+input6	=	['103.28.248.91', '103.28.250.91']
 
 get_result(input)
 get_result(input2)
 get_result(input3)
 get_result(input4)
 get_result(input5)
+get_result(input6)
