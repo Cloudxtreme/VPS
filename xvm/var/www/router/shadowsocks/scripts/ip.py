@@ -39,9 +39,13 @@ input5	=	['160.16.80.1', '160.16.81.30']
 # Neobux
 input6	=	['103.28.248.91', '103.28.250.91']
 
+# Amazon Japan
+input7	=	['54.240.248.0', '54.240.252.0']
+
 get_result(input)
 get_result(input2)
 get_result(input3)
 get_result(input4)
 get_result(input5)
 get_result(input6)
+get_result(input7)

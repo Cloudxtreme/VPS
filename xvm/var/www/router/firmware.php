@@ -77,19 +77,19 @@
 						<tr>
 							<td>N750</td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_ss).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_n750_ss).'</p></a>';
+								echo '<a href="'.$dllink_n750_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_ss).'<br />md5校验和：'.md5($dllink_n750_ss).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_n750_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_sv).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_n750_sv).'</p></a>';
+								echo '<a href="'.$dllink_n750_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_sv).'<br />md5校验和：'.md5($dllink_n750_sv).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_n750_sv).'</p></a>';
 							?></td>
 						</tr>
 						<tr>
 							<td>AG300H</td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_ss).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_ss).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_ss).'<br />md5校验和：'.md5($dllink_ag300h_ss).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_sv).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_sv).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_sv).'<br />md5校验和：'.md5($dllink_ag300h_sv).'</div><p class="hilight">'.date(" Y-m-d",$updatetime_ag300h_sv).'</p></a>';
 							?></td>
 						</tr>
 					</table>
@@ -105,19 +105,19 @@
 						<tr>
 							<td>N750</td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_1407_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_ss).'</div><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_ss).'</p></a>';
+								echo '<a href="'.$dllink_n750_1407_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_ss).'<br />md5校验和：'.md5($dllink_n750_1407_ss).'</div><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_n750_1407_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_sv).'</div><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_sv).'</p></a>';
+								echo '<a href="'.$dllink_n750_1407_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_n750_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_n750_1407_sv).'<br />md5校验和：'.md5($dllink_n750_1407_sv).'</div><p class="safe">'.date(" Y-m-d",$updatetime_n750_1407_sv).'</p></a>';
 							?></td>
 						</tr>
 						<tr>
 							<td>AG300H</td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_1407_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_ss).'</div><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_ss).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_1407_ss.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_1407_ss).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_ss).'<br />md5校验和：'.md5($dllink_ag300h_1407_ss).'</div><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_ss).'</p></a>';
 							?></td>
 							<td><?php
-								echo '<a href="'.$dllink_ag300h_1407_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_sv).'</div><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_sv).'</p></a>';
+								echo '<a href="'.$dllink_ag300h_1407_sv.'" class="tip-bottom"><div>文件大小：'.RealSize($dllink_ag300h_1407_sv).'<br />更新时间：'.date("Y年m月d日 H:i:s",$updatetime_ag300h_1407_sv).'<br />md5校验和：'.md5($dllink_ag300h_1407_sv).'</div><p class="safe">'.date(" Y-m-d",$updatetime_ag300h_1407_sv).'</p></a>';
 							?></td>
 						</tr>
 					</table>

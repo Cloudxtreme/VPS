@@ -308,7 +308,7 @@
 						<li>
 							Q：怎样能知道ShadowSocks已经启用了？
 							<br />
-							A：打开<a href="http://ip.cn/" target="_blank">ip.cn</a>，看到的IP<span class="hilight"> 是国内的IP </span>，<b>而且</b>打开<a href="http://www.whatismyip.com/" target="_blank">What Is My IP</a>，看到的IP<span class="hilight"> 是VPS的IP </span>就说明配置成功。
+							A：打开<a href="http://ip138.com/" target="_blank">ip138.com</a>，看到的IP<span class="hilight"> 是国内的IP </span>，<b>而且</b>打开<a href="http://www.whatismyip.com/" target="_blank">What Is My IP</a>，看到的IP<span class="hilight"> 是VPS的IP </span>就说明配置成功。
 						</li>
 						<br />
 						<li>
