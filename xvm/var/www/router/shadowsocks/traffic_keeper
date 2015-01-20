@@ -1,0 +1,19 @@
+#!/bin/sh
+
+URL=https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon2.ico
+ICO=/tmp/gm.ico
+LOG=/tmp/gm.log
+
+if [ $(cat /etc/config/shadowsocks | grep "option enable '1'" -c) = 1 ]; then
+
+	while [ ! $(wget --no-check-certificate $URL -O $ICO -o $LOG -t 2 -T 5 ; cat $LOG | grep "saved" -c) = 1 ]; do
+
+		/etc/init.d/shadowsocks restart;
+		sleep 5;
+		rm $ICO $LOG;
+
+	done
+
+fi
+
+rm $ICO $LOG;

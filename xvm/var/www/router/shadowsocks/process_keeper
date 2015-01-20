@@ -1,0 +1,19 @@
+#!/bin/sh
+
+CONFIG=/etc/config/shadowsocks
+
+if [ $(cat $CONFIG | grep "option enable '1'" -c) = 1 ]; then
+
+	while [ ! $(ps | grep "ss-redir" -c) = 2 ]; do
+		/etc/init.d/shadowsocks restart;
+	done
+
+	if [ $(cat $CONFIG | grep "option tunnel_enable '1'" -c) = 1 ]; then
+
+		while [ ! $(ps | grep "ss-tunnel" -c) = 2 ]; do
+			/etc/init.d/shadowsocks restart;
+		done
+
+	fi
+
+fi

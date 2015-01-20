@@ -1,9 +1,9 @@
 <?php
-	date_default_timezone_set('Asia/Shanghai');
+	include '../../common.php';
 
 	$updatetime_page = filemtime("keep_alive.php");
 
-	$ico = 'tt.ico';
+	$ico = 'gm.ico';
 	$check = 'scripts/check';
 	$check_plus = 'scripts/check_plus';
 ?>
@@ -14,6 +14,22 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../../style.css">
 		<title>定时自动检测ShadowSocks，并且按需重启的脚本</title>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				jQuery('.tabs .tab-links a').on('click', function(e)  {
+					var currentAttrValue = jQuery(this).attr('href');
+
+					// Show/Hide Tabs
+					jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+					// Change/remove current tab to active
+					jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+					e.preventDefault();
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<a href="javascript:history.go(-1)">返回</a>
