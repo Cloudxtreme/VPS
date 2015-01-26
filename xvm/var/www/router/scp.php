@@ -1,32 +1,11 @@
 <?php
-	date_default_timezone_set('Asia/Shanghai');
+	$title = '管理路由器内部文件';
 
 	$updatetime_page = filemtime("scp.php");
+
+	include '../common.php';
 ?>
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="../style.css">
-		<title>管理路由器内部文件</title>
-		<script src="../js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function() {
-				jQuery('.tabs .tab-links a').on('click', function(e)  {
-					var currentAttrValue = jQuery(this).attr('href');
-
-					// Show/Hide Tabs
-					jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
-
-					// Change/remove current tab to active
-					jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
-
-					e.preventDefault();
-				});
-			});
-		</script>
-	</head>
 	<body>
 		<a href="javascript:history.go(-1)">返回</a>
 		<h1 class="center">管理路由器内部文件</h1>

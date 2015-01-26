@@ -10,7 +10,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../style.css">
 		<style type="text/css">
-			*	{ font-family: "Meiryo UI","Microsoft Yahei UI","FontAwesome",sans-serif !important; }
+			*	{ font-family: "Meiryo UI",Meiryo,"Microsoft Yahei UI","FontAwesome",sans-serif !important; }
 		</style>
 		<title>リサーチ情報まとめ</title>
 		<script src="../js/jquery-1.11.1.min.js"></script>
@@ -33,7 +33,8 @@
 	<body>
 		<a href="javascript:history.go(-1)">戻る</a>
 		<h1 class="center">リサーチ情報まとめ</h1>
-			<p class="center gray">更新時刻：<?php echo date("Y年m月d日 H:i:s",$updatetime_page) ?></p>	<div class="tabs">
+		<p class="center gray">更新時刻：<?php echo date("Y年m月d日 H:i:s",$updatetime_page) ?></p>
+		<div class="tabs">
 			<ul class="tab-links">
 				<li class="active gp-1"><a href="#tab1">輸入</a></li>
 				<li class="gp-3"><a href="#tab2">輸出</a></li>
