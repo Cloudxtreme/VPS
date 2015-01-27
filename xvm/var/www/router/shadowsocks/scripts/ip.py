@@ -42,6 +42,9 @@ input6	=	['103.28.248.91', '103.28.249.91']
 # Amazon Japan
 input7	=	['54.240.248.0', '54.240.252.0']
 
+# Mozilla CDN
+input8	=	['63.243.242.88', '63.243.242.91']
+
 get_result(input)
 get_result(input2)
 get_result(input3)
@@ -49,3 +52,4 @@ get_result(input4)
 get_result(input5)
 get_result(input6)
 get_result(input7)
+get_result(input8)

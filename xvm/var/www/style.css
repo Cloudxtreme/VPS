@@ -404,6 +404,9 @@ tr > td:first-child	{ word-break: keep-all; white-space: nowrap; }
 .fa-toggle-off	{ color: rgba(0,0,0,.5); }
 .fa-toggle-on	{ color: rgb(88,181,92); }
 
+.fa-star		{ color: rgb(255,201,127); opacity: .8; }
+.fa-star:hover	{ text-shadow: 0 1px 8px rgba(254,200,127,.75); opacity: 1; }
+
 /*	自定义class	*/
 
 .bold			{ font-weight: bold; }
