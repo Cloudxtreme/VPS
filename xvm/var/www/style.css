@@ -89,7 +89,7 @@ a:not([name])		{
 						border-radius: .25em;
 					}
 
-:not(td) > a:not([name]):not([href$="png"]):not([href$="jpeg"]):hover	{ /*border-bottom: .1em solid rgb(65,131,196);*/
+:not(td) > a:not([name]):not([href$="png"]):hover	{ /*border-bottom: .1em solid rgb(65,131,196);*/
 						position: relative;
 						background-color: #fff;
 						border-color: rgb(65,131,196);
