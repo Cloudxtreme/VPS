@@ -172,6 +172,11 @@
 							<td class="tip"><div>租金 $3.57 用于 Linode VPS</div><i class="fa fa-minus-circle text-danger"></i> 22.15 元</td>
 							<td><?php echo $blance += -22.15; ?> 元</td>
 						</tr>
+						<tr>
+							<td>2015-1-31</td>
+							<td class="tip"><div>月租金 $5 用于 DigitalOcean VPS</div><i class="fa fa-minus-circle text-danger"></i> 31.11 元</td>
+							<td><?php echo $blance += -31.11; ?> 元</td>
+						</tr>
 					</table>
 				</div>
 				<div id="tab5" class="tab">
@@ -229,7 +234,7 @@
 							<td>新加坡</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
 							<td>$5 / 月</td>
-							<td class="right">2015-1-31 <span class="on"></span></td>
+							<td class="right">2015-2-28 <span class="on"></span></td>
 						</tr>
 					</table>
 				</div>
