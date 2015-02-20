@@ -190,9 +190,9 @@
 							<td>到期日期</td>
 						</tr>
 						<tr>
-							<td class="ip left">&#241;&#240;&#244;&#239;&#242;&#242;&#244;&#239;&#241;&#243;&#245;&#239;&#244;&#243;</td>
+							<td class="ip left">&#244;&#245;&#239;&#246;&#242;&#239;&#241;&#241;&#246;&#239;&#241;&#244;&#242;</td>
 							<td rowspan="2">Bandwagon Host</td>
-							<td>美国 加州</td>
+							<td>美国 凤凰城</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
 							<td>$4.99 / 年</td>
 							<td class="right">2015-4-2 <span class="on"></span></td>
