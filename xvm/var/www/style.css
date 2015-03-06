@@ -386,6 +386,8 @@ table + div.dl a:not([name]):not([href$="png"]):hover	{ background-color: transp
 th,
 tr > td:first-child	{ word-break: keep-all; white-space: nowrap; }
 
+table + .after		{ margin: auto; }
+
 /*	fa	*/
 .fa				{ font-size: 110%; }
 

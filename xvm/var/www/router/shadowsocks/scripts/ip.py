@@ -42,6 +42,9 @@ input6	=	['103.28.248.91', '103.28.249.91']
 # Mozilla CDN
 input7	=	['63.243.242.88', '63.243.242.91']
 
+# VULTR JP
+input8	=	['108.61.160.1', '108.61.162.213']
+
 get_result(input)
 get_result(input2)
 get_result(input3)
@@ -49,3 +52,4 @@ get_result(input4)
 get_result(input5)
 get_result(input6)
 get_result(input7)
+get_result(input8)

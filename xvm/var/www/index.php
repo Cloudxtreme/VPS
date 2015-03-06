@@ -180,7 +180,7 @@
 					</table>
 				</div>
 				<div id="tab5" class="tab">
-					<table class="center">
+					<table class="center before">
 						<tr>
 							<td>VPS IP</td>
 							<td>VPS 运营商</td>
@@ -228,17 +228,55 @@
 							<td>$10 / 月</td>
 							<td class="right">2015-1-11 <span class="off"></span></td>
 						</tr>
-						<tr>
+						<tr class="gray null">
 							<td class="ip left">&#241;&#242;&#248;&#239;&#241;&#249;&#249;&#239;&#242;&#242;&#242;&#239;&#241;&#247;&#247;</td>
 							<td>DigitalOcean</td>
 							<td>新加坡</td>
 							<td><span class="hilight">python</span><span class="hilight">go</span></td>
 							<td>$5 / 月</td>
-							<td class="right">2015-2-28 <span class="on"></span></td>
+							<td class="right">2015-2-28 <span class="off"></span></td>
+						</tr>
+						<tr>
+							<td class="ip left">&#241;&#240;&#248;&#239;&#246;&#241;&#239;&#241;&#246;&#242;&#239;&#242;&#241;&#243;</td>
+							<td>VULTR</td>
+							<td>日本 东京</td>
+							<td><span class="hilight">python</span><span class="hilight">go</span></td>
+							<td>$5 / 月</td>
+							<td class="right">2015-8-31 <span class="on"></span></td>
 						</tr>
 					</table>
+					<div class="after center">
+						<ol class="left"><strong>注意：</strong>
+							<li>
+								服务端端口：
+								<ul>
+									<li>python版：838x</li>
+									<li>go版：2838x</li>
+								</ul>
+							</li>
+							<li>
+								所有服务端都使用了<b>相同</b>的：
+								<ul>
+									<li>端口</li>
+									<li>密码</li>
+									<li>加密方式</li>
+								</ul>
+								切换服务端<b>只需变更IP</b>即可。
+							</li>
+							<li>
+								所有服务端都支持UDP转发。
+							</li>
+						</ol>
+					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+	<foot>
+		<script>
+			$(window).load( function() {
+				$('table + .after').width(auto)
+			} );
+		</script>
+	</foot>
 </html>
